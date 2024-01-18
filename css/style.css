@@ -58,6 +58,43 @@ a {
     color: var(--main-bg-color)
 }
 
+/****** NAV BAR ***********/
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    max-height: 1.5em;
+    margin-top: auto;
+    margin-bottom: auto;
+    position: relative;
+}
+
+.navlist {
+    display: flex;
+    justify-content: center;
+    }
+
+.navlist a {
+    padding-top: 1.3em;
+}
+
+.navlist a:hover {
+    color: var(--main-color);
+    border-top : 3px var(--main-color) solid;
+}
+
+ul {
+    list-style: none;
+    }
+
+li {
+    padding: 0 0 0 6em;
+}
+    
+
+    
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
