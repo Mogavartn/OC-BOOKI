@@ -93,8 +93,25 @@ li {
     padding: 0 0 0 6em;
 }
     
+/****** RECHERCHE SECTION ***********/
+.recherche {
+    display: flex;
+    flex-direction: column;
+}  
 
-    
+.recherche h1 {
+    margin-bottom: 0;
+}
+
+.recherche p {
+    margin: 0;
+}
+
+form {
+    padding: auto;
+    border: 2px solid black;
+}
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
