@@ -107,11 +107,30 @@ li {
     margin: 0;
 }
 
-form {
-    padding: auto;
-    border: 2px solid black;
+.locate {
+    width: 2em;
+    height: 1.8em;
+}
+.search-button {
+    width: 2em;
+    height: 1.8em;
+    background-color: red;
 }
 
+fieldset {
+    display: flex;
+    border: none;
+    background-color: #C2B0F9;
+    border: 2px solid black;
+    border-radius: 6px;
+    width: 20em;
+    height: 0.3em;
+    padding: 0.6em;
+    justify-content: center;
+    align-items: center;
+}
+form {
+}
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
