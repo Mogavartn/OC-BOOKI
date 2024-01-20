@@ -149,6 +149,27 @@ form {
     width: 65%;
 }
 
+.hebergements-grid {
+    display: grid;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(125px, 250px));
+    padding: 15px;
+    margin: 20px;
+    grid-gap: 30px;
+    column-gap: 30px;
+    
+}
+
+.hebergements-cards img {
+    width: 33%;
+    height: 136px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
 .hebergements-tiles {
     width: 250.33333px;
     height: 207.25px;
