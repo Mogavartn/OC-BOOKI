@@ -17,6 +17,10 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: flex-start;
+    padding: 0px 50px;
+    gap: 35px;
+    align-self: stretch; 
 }
 
 .main-container {
@@ -98,6 +102,9 @@ li {
 .recherche {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    gap: 35px;
+    align-self: stretch; 
 }  
 
 .recherche h1 {
@@ -106,6 +113,26 @@ li {
 
 .recherche p {
     margin: 0;
+}
+
+.filterbar {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    align-items: center;
+    gap: 15px;
+}
+
+.filterbar button {
+    display: flex;
+    width: auto;
+    height: 50px;
+    padding: 4px 19px;
+    align-items: center;
+    gap: 10px; 
+    border-radius: 25px;
+    border: 2px solid var(--Grey-Tint2, #D9D9D9);
+    
 }
 
 .locate {
@@ -244,10 +271,18 @@ form {
 }
 
 /****** Activités ***********/
+.activites {
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+    gap: 30px;
+    align-self: stretch; 
+}
+
 .activites-cards {
     display: grid;
     position: relative;
-    width: auto;
+    width: 100%;
     height: auto;
     grid-template-columns: repeat(auto-fit, minmax(125px, 250px));
     grid-gap: 30px;
