@@ -448,7 +448,7 @@ footer .colonne {
 
 /*********** RESPONSIVE ***************/
 
-@media (max-width: 1440px)  {
+@media (max-width: 1440px) and (min-width: 925px)  {
 .hebergements-and-populaires {
     grid-template-columns: 1fr;
     row-gap: 2rem;
@@ -462,9 +462,19 @@ footer .colonne {
 }
 
 @media (min-width: 925px) {
+
 .hebergements {
     grid-template-columns: repeat(3, 1fr);
+    font-size: 85%;
     }
+.hebergements-card {
+    height: 90%;
+}
+    .populaires {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto repeat(4, 8rem);
+    }
+    
 }
 
 @media (max-width: 925px) and (min-width: 650px) {
