@@ -152,10 +152,10 @@ li {
     background: var(--White, #FFF);
 }
 
-#searchbar ::placeholder {
+/*#searchbar ::placeholder {
     color: var(--Black, #000);
     opacity: 100%;
-}
+} */
 
 #locate {
     width: 50px;
@@ -240,12 +240,13 @@ li {
 .hebergements-and-populaires {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    margin-top: 20px;    
-
+    /*justify-content: space-between;*/
+    margin-top: 20px;
 }
 
+/****** Hebergements ***********/
 .hebergements {
+    margin: 20px 15px 20px 0px;
     background-color: #F2F2F2;
     border: 1px solid #F2F2F2;
     border-radius: 20px;
@@ -266,7 +267,6 @@ li {
 }
 */
 
-/****** Hebergements ***********/
 /*.hebergements {
     width: 66%;
 }
@@ -395,17 +395,12 @@ li {
 
 /****** Populaires ***********/
 .populaires {
-    display: grid;
-    row-gap: 2rem;
-    align-items: start;
-    grid-template-rows: auto repeat(3, 1fr);
     margin: 20px 0px 20px 15px;
     padding-bottom: 15px;
     flex: 1;
     background-color: #F2F2F2;
     border: 1px solid #F2F2F2;
     border-radius: 20px;
-    padding: 30px;
 }
 
 .populaires-header {
@@ -519,34 +514,79 @@ li {
 */
 /****** Activités ***********/
 .activites {
-    display: flex;
+    margin-top: 20px;
+    padding: 20px 0px 20px 0px; 
+    /*display: flex;
     padding: 30px;
     flex-direction: column;
     gap: 30px;
-    align-self: stretch; 
+    align-self: stretch; */
+}
+
+.activites-header {
+    margin: 30px 0px 0px 10px;
+}
+
+.activites-title {
+    font-size: 20px;
 }
 
 .activites-cards {
-    display: grid;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: space-between;
+    justify-content: space-around;
+    height: 600px;
+    /*display: grid;
     position: relative;
     width: 100%;
     height: auto;
     grid-template-columns: repeat(auto-fit, minmax(125px, 250px));
     grid-gap: 30px;
-    column-gap: 30px;
+    column-gap: 30px;*/
 }
 
-.activites-cards img {
+.actcard {
+    border-radius: 20px;
+    margin: 5px;
+    width: 23%;
+    height: auto;
+    box-shadow: 0 0 16px #0000001f;
+    overflow: hidden;
+    transition: transform 250ms ease-in-out;
+}
+
+.actcard-content {
+    margin: 0px;
+}
+
+.actcard-content img {
+    height: 500px;
+    border-radius: 20px 20px 0px 0px;
     width: 100%;
+    object-fit: cover;
+    /*width: 100%;
     height: 380px;
     border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-top-right-radius: 20px;*/
 }
 
+.actcard-content figcaption {
+    margin: 20px;
+}
+
+.
 .activites-cards .card-title {
     padding: 20 19 20 19;
 }
 
+.actcard-title {
+    font-size: 16px;
+}
+
+.actcard:hover {
+    transform: scale(1.05);
+}
 /****** Footer ***********/
 
 footer {
