@@ -14,46 +14,57 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <div class="main-container">
-
-<!--------------------------HEADER------------------------>
+<!--------------------------HEADER---------------------------->
 <header>
-    <nav>
         <img src="./images/logo/Booki.png"  class="logo">
-        <div class="menu">
+        <nav class="menu">
             <ul class="navlist">
             <li><a href="#hebergements">Hébergements</a></li>
             <li><a href="#activites">Activités</a></li>
             </ul>
-        </div>
-    </nav>
+        </nav>
 </header>   
-<!--------------------RECHERCHE SECTION-------------------->
+<!--------------------RECHERCHE SECTION----------------------->
 <main>
-<section class="recherche">
-    <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-    <p>En plein centre ville ou en pleine nature</p>
-        <form method="get" action="" id="searchbar">
-            <button class="fa-solid fa-location-dot" id="locate"></button>
-            <input type="search" id="search-txt" name="search-txt" placeholder="Marseille, France"/>
-            <button for="search-txt" id="search-button">Rechercher</button>
+<section class="search">
+    <header class="search-header">
+        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+        <p>En plein centre ville ou en pleine nature</p>
+    </header>
+        <form class="search-form" method="get" action="#">
+            <div class="search-icon">
+                <button class="fa-solid fa-location-dot" id="locate" aria-hidden="true"></button>
+            </div>
+            <input type="search" class="search-txt" name="search-txt" placeholder="Marseille, France"/>
+            <button for="search-txt" class="search-button">Rechercher</button>
         </form>
     <div class="filterbar">
         <h4>Filtres</h4>
-        <button><i class="fa-solid fa-money-bill-wave"></i>Economique</button>
-        <button><i class="fa-solid fa-person"></i>Familial</button>
-        <button><i class="fa-solid fa-heart"></i>Romantique</button>
-        <button><i class="fa-solid fa-fire"></i>Nos pépites</button>
+        <button>
+            <i class="fa-solid fa-money-bill-wave"></i>
+            Economique
+        </button>
+        <button>
+            <i class="fa-solid fa-person"></i>
+            Familial
+        </button>
+        <button>
+            <i class="fa-solid fa-heart"></i>
+            Romantique
+        </button>
+        <button><i class="fa-solid fa-fire"></i>
+            Nos pépites
+        </button>
     </div> 
-    <div class="infobar"> 
-        <img src="./images/icons/i-icon.png" id="i-info">
-        <span>Plus de 500 logements sont disponibles dans cette ville</span>
+    <div class="search-result"> 
+        <div class="search-result-icon">
+            <i class="fa-solid fa-info search_result_icon_info"></i>
+        </div>
+        <p>Plus de 500 logements sont disponibles dans cette ville</p>
     </div>
 </section>
-
-<!-----------------------HEBERGEMENTS ET POPULAIRES------------------------>
+<!-----------------HEBERGEMENTS ET POPULAIRES---------------->
 <section class="hebergements-and-populaires">
-
 <!-----------------------HEBERGEMENTS------------------------>
     <div class="hebergements">
         <header class="hebergements-header">
@@ -191,8 +202,7 @@
                     <a class="afficherplus" href="#">Afficher Plus</a>
                 </footer>
     </div>
-
-<!-----------------------LES PLUS POPULAIRES------------------------>
+<!--------------------LES PLUS POPULAIRES--------------------->
     <aside class="populaires">
         <header class="populaires-header">
             <h2 class="populaires-title">Les plus populaires</h2>
@@ -262,8 +272,7 @@
         </div>
     </aside>
 </section>
-
-<!-----------------------SECTION ACTIVITES------------------------>
+<!---------------------SECTION ACTIVITES---------------------->
     <section class="activites" id="activites">
         <header class="activites-header">
             <h2 class="activites-title">Activités à Marseille</h2>
@@ -305,8 +314,7 @@
 
     </section>
 </main>
-<!-----------------------FOOTER------------------------>
-
+<!---------------------------FOOTER-------------------------->
         <footer>
             <section class="colonne">
                 <h4>À propos</h4>
@@ -331,5 +339,5 @@
                 </ul>
             </section>
         </footer>
-    </body>
+</body>
 </html>
