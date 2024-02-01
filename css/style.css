@@ -114,7 +114,7 @@ a, button, label {
 
 .search-form {
     display: flex;
-    width: 450px;
+    width: 28em;
     height: 50px;
     border: 1px solid var(--main-bg-grey);
     border-radius: 15px;
@@ -163,8 +163,6 @@ a, button, label {
 
 .search-button {
     display: flex;
-    width: 200px;
-    height: 49px;
     padding: 15px 16px;
     align-items: center;
     gap: 10px; 
@@ -184,27 +182,30 @@ a, button, label {
     border:0;
 }
 
+.search-button i {
+    display: none;
+}
+
 .filterbar {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 15px;
-    display: flex;
     flex-wrap: wrap;
 }
 
 .filterbar button {
     display: flex;
-    height: 50px;
+    height: 2.7em;
     padding: 0px 10px;
     align-items: center;
-    justify-content: center;
     gap: 10px; 
     border-radius: 50px;
-    margin: 20px 15px 15px 15px;
     border: 2px solid var(--main-bg-grey);
     background-color: var(--White);
     transition: transform 350ms ease-in-out;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 .filterbar button:hover {
@@ -660,17 +661,30 @@ footer {
         padding: 0px;
     }
 
-    .search {
-        width: 96%;
+    .search-header {
+        text-align: center;
     }
 
+    .search-button span {
+        display: none;
+    }
+
+    .search-button i {
+        display: block;
+        color: var(--White);
+        font-size: larger;
+    }
     .search-form {
-        width: fit-content;
+        width: 100%;
     }
 
-    .hebergements-and-populaires {
-        width: 96%;
+    .filterbar {
+    margin: 0px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
     }
+
     .hebergements {
         margin: 0px 0px;
     }
@@ -680,14 +694,6 @@ footer {
     }
     .populaires {
         margin: 0px 0px;
-    }
-
-    .activites {
-        width: 92.5%;
-    }
-
-    footer {
-        width: 95%;
     }
 
     .footer-container {
