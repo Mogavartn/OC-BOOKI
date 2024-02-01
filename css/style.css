@@ -4,9 +4,11 @@
 }
 
 :root {
-    --main-color: #0065FC;
-    --main-bg-color: #F2F2F2;
-    --filter-bg-color: #DEEBFF;
+    --main-blue: #0065FC;
+    --main-bg-grey: #F2F2F2;
+    --filter-bg-bluegrey: #DEEBFF;
+    --Black: #000;
+    --White: #FFF;
 }
 
 html {
@@ -27,11 +29,11 @@ body {
     padding: 0px 20px;    
 }
 
-header {
+/*header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
+}*/
 
 main {
     display: flex;
@@ -59,44 +61,50 @@ a, button, label {
 
 /****** NAV BAR ***********/
 .menu {
-    font-weight: bold;
     display: flex;
-    align-items: right;
-    padding: 0px 15px 0px 15px;
+    justify-content: space-between;
+    margin-bottom: 30px;
 }
 
-.logo {
-    display: flex;
+.logo-div {
     padding: 10px 15px 10px 15px;
+}
+
+.logo-img {
+    max-height: 1.8em;
+    /*display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 10px;
-    max-height: 1.8em;
+    gap: 10px;*/
 }
-
 .navlist {
     display: flex;
+    justify-content: space-between;
     list-style: none;
-    font-weight:normal;
-    }
+    margin-right: -10px;
+}
 
+.navlist li {
+    padding: 0px 30px;
+}
 .navlist a {
     padding-top: 1.3em;
 }
 
 .navlist a:hover {
-    color: var(--main-color);
-    border-top : 4px var(--main-color) solid;
+    color: var(--main-blue);
+    border-top : 4px var(--main-blue) solid;
 }
 
-.navlist li {
+/*.navlist li {
     padding: 0 0 0 6em;
-}
+}*/
 
 /****** RECHERCHE SECTION ***********/
 .search-header {
     display: flex;
     flex-direction: column;
+    margin-bottom: 20px;
 }
 
 .search h1 {
@@ -108,8 +116,9 @@ a, button, label {
     display: flex;
     width: 450px;
     height: 50px;
-    border: 1px solid var(--main-bg-color);
+    border: 1px solid var(--main-bg-grey);
     border-radius: 15px;
+    margin-bottom: 20px;
 }
 
 .search-icon {
@@ -118,8 +127,8 @@ a, button, label {
     align-items: center;
     width: 60px;
     height: 50px;
-    background-color: var(--Grey, #F2F2F2);
-    color: var(--Black, #000);
+    background-color: var(--main-bg-grey);
+    color: var(--Black);
     border-radius: 15px 0px 0px 15px;
     border:0;
 }
@@ -129,13 +138,19 @@ a, button, label {
     height: 40px;
     border-radius: 15px 0px 0px 15px;
     font-weight: 900;
-    color: var(--Black, #000);
-    background-color: var(--Grey, #F2F2F2);
+    color: var(--Black);
+    background-color: var(--main-bg-grey);
     border: 0;
+}
+#locate {
+    font-size: larger;
+}
+#locate:hover {
+    color: var(--main-blue);
 }
 
 .search-txt {
-    color: var(--Black, #000);
+    color: var(--Black);
     text-align: center;
     font-family: Raleway;
     font-style: normal;
@@ -154,18 +169,18 @@ a, button, label {
     align-items: center;
     gap: 10px; 
     border-radius: 0px 15px 15px 0px;
-    border: 1px transparent var(--Blue, #0065FC);
-    background: var(--Blue, #0065FC);
+    border: 1px transparent var(--main-blue);
+    background: var(--main-blue);
     font-family: Raleway;
     font-style: normal;
     font-weight: 700;
-    color: var(--White, #FFF);
+    color: var(--White);
     transition: background-color 350ms ease-in-out;
 }
 
 .search-button:hover {
-    color: #0065FC;
-    background-color: #DEEBFF;
+    color: var(--main-blue);
+    background-color: var(--filter-bg-bluegrey);
     border:0;
 }
 
@@ -176,29 +191,29 @@ a, button, label {
     gap: 15px;
     display: flex;
     flex-wrap: wrap;
-    margin-top: 5px;
 }
 
 .filterbar button {
     display: flex;
     height: 50px;
-    padding: 2px 10px;
+    padding: 0px 10px;
     align-items: center;
     justify-content: center;
     gap: 10px; 
     border-radius: 50px;
     margin: 20px 15px 15px 15px;
-    border: 2px solid var(--Grey-Tint2, #D9D9D9);
-    background-color: var(--White, #FFF);
-    transition: transform 250ms ease-in-out;
+    border: 2px solid var(--main-bg-grey);
+    background-color: var(--White);
+    transition: transform 350ms ease-in-out;
 }
 
 .filterbar button:hover {
     transform: scale(1.1);
+    background-color: var(--filter-bg-bluegrey);
 }
 
 .filterbar .fa-solid {
-    color: var(--Blue, #0065FC);
+    color: var(--main-blue);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -216,26 +231,25 @@ a, button, label {
     align-items: center;
     width: 20px;
     height: 20px;
-    border: 1px solid #dfdfdf;
+    border: 1px solid var(--main-bg-grey);
     border-radius: 20px;
 }
 
 .search-result-icon i {
-    color: var(--Blue, #0065FC);
+    color: var(--main-blue);
 }
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
     flex-direction: row;
-    margin-top: 20px;
 }
 
 /****** Hebergements ***********/
 .hebergements {
     margin: 20px 15px 20px 0px;
-    background-color: #F2F2F2;
-    border: 1px solid #F2F2F2;
+    background-color: var(--main-bg-grey);
+    border: 1px solid var(--main-bg-grey);
     border-radius: 20px;
     flex: 2;
     padding: 15px;
@@ -259,7 +273,7 @@ a, button, label {
     height: auto;
     padding: 5px;
     margin: 15px 5px;
-    background-color: white;
+    background-color: var(--White);
     border-radius: 20px;
     box-shadow: 0 0 16px #0000002e;
     box-sizing: border-box;
@@ -303,7 +317,7 @@ a, button, label {
 }
 
 .afficherplus:hover {
-    color: #0065FC;
+    color: var(--main-blue);
     text-decoration: underline;
 }
 
@@ -314,10 +328,10 @@ a, button, label {
 }
 
 .rating-star[data-active="true"] {
-    color: var(--main-color);
+    color: var(--main-blue);
 }
 .rating-star[data-active="false"] {
-    color: var(--main-bg-color);
+    color: var(--main-bg-grey);
 }
 
 .heb-cards:hover {
@@ -329,8 +343,8 @@ a, button, label {
     margin: 20px 0px 20px 15px;
     padding-bottom: 15px;
     flex: 1;
-    background-color: #F2F2F2;
-    border: 1px solid #F2F2F2;
+    background-color: var(--main-bg-grey);
+    border: 1px solid var(--main-bg-grey);
     border-radius: 20px;
     padding: 10px;
 }
@@ -343,7 +357,7 @@ a, button, label {
 
 .populaires-header .fa-solid {
     margin: 30px 30px 15px 30px;
-    color: var(--main-color);
+    color: var(--main-blue);
     font-size: larger;
 }
 
@@ -369,7 +383,7 @@ a, button, label {
     height: auto;
     padding: 5px;
     margin: 15px 5px;
-    background-color: white;
+    background-color: var(--White);
     border-radius: 20px;
     box-shadow: 0 0 16px #0000002e;
     box-sizing: border-box;
@@ -482,7 +496,7 @@ a, button, label {
 
 /****** Footer ***********/
 footer {
-    background: var(--Grey, #F2F2F2);
+    background: var(--main-bg-grey);
 }
 
 .footer-container {
@@ -600,35 +614,42 @@ footer {
 */
 /* Small devices (phones, less than 768px) */
 @media (max-width: 768px) {
-    html,
-    body,
-    header {
-        min-width: 375px;
+    html {
+        min-width:auto;
         max-width: 768px;
     }
 
-    header .logo {
-        width: 60px;
-      }
-
-    html {
-        margin: 0;
-        flex-direction: column;
-    }
-
-    header {
-        flex-direction: column;
-        gap: 30px;
-        margin: 30px 0;  
-        align-items: center; 
+    .menu {
+        display: block;
+        margin: 20px 0;  
     }
     
-    .menu {
+    .logo-div {
         display: flex;
-        flex-direction: row;
+        justify-content: center;
     }
+    
+    .navlist {
+        padding: 0px 5px 20px 0px;
+        margin-right: 0px;
+    }
+
     .navlist li {
-        padding: 0;
+        border-bottom: solid 3px var(--main-bg-grey);
+        width: 50%;
+        text-align: center;
+    }
+
+    .navlist a:hover {
+        border-bottom: 3px var(--main-blue) solid;
+        border-top: none;
+        color: var(--main-blue);
+    }
+
+    .navlist a:active {
+        border-bottom: 3px var(--main-blue) solid;
+        border-top: none;
+        color: var(--main-blue);
     }
 
     body {
@@ -646,7 +667,7 @@ footer {
     .search-form {
         width: fit-content;
     }
-    
+
     .hebergements-and-populaires {
         width: 96%;
     }
