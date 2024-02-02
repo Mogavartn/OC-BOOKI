@@ -95,7 +95,7 @@ a, button, label {
     margin-bottom: 20px;
 }
 
-.search h1 {
+.search-header h1 {
     font-size: 24px;
     margin: 0px;
 }
@@ -129,9 +129,6 @@ a, button, label {
     color: var(--Black);
     background-color: var(--main-bg-grey);
     border: 0;
-}
-
-#locate {
     font-size: larger;
 }
 
@@ -289,6 +286,10 @@ a, button, label {
     transition: transform 250ms ease-in-out;
 }
 
+.heb-cards:hover {
+    transform: scale(1.05);
+}
+
 .hebcard-title {
     margin: 0px;
     padding-left: 5px;
@@ -307,9 +308,11 @@ a, button, label {
     padding-left: 5px;
 }
 
-.afficherplus:hover {
+.rating-star[data-active="true"] {
     color: var(--main-blue);
-    text-decoration: underline;
+}
+.rating-star[data-active="false"] {
+    color: var(--main-bg-grey);
 }
 
 .hebergements footer {
@@ -318,15 +321,9 @@ a, button, label {
     border-radius: 20px;
 }
 
-.rating-star[data-active="true"] {
+.afficherplus:hover {
     color: var(--main-blue);
-}
-.rating-star[data-active="false"] {
-    color: var(--main-bg-grey);
-}
-
-.heb-cards:hover {
-    transform: scale(1.05);
+    text-decoration: underline;
 }
 
 /***************** Populaires *****************/
@@ -350,11 +347,6 @@ a, button, label {
     margin: 30px 30px 15px 30px;
     color: var(--main-blue);
     font-size: larger;
-}
-
-.populaires-divcards .card {
-    display: flex;
-    margin-top: 33px;
 }
 
 .populaires-title {
@@ -469,10 +461,6 @@ a, button, label {
     margin: 20px;
 }
 
-.activites-divcards .card-title {
-    padding: 20 19 20 19;
-}
-
 .actcard-title {
     font-size: 16px;
 }
@@ -509,258 +497,4 @@ footer {
     margin-bottom: -10px;
     padding-left: 40px;
     font-size: 14px;
-}
-
-
-/* Le code ci-dessous correspond à la version responsive uniquement */
-
-/****** Media queries ***********/
-/* Medium devices (tablets, less/equal than 1024px) */
-@media (max-width: 1024px) {
-    html {
-        min-width: 768px;
-        max-width: 1024px;
-        margin: 0;
-        flex-direction: column;
-    }
-
-    body {
-        padding: 0px 0px;    
-    }
-  
-    .search h1 {
-        font-size: 20px;
-    }
-
-    .hebergements-populaires {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    
-    .hebergements {
-        margin: 20px 0px 20px 0px;
-    }
-
-    .heb-cards {
-        width: 31%;
-    }
-
-    .populaires {
-        margin: 20px 0px 20px 0px;
-        padding: 20px;
-    }
-
-    .populaires-divcards {
-        flex-direction: row;
-    }
-
-    .pop-cards {
-        width: 36%;
-        height: auto;
-    }
-
-    .activites-divcards {
-        height: 300px;
-    }
-
-    .actcard-content img {
-        height: 200px;
-    }
-
-
-    .populaires-cards a {
-        width: 30%;
-    }
-
-    .populaires-cards .card-title {
-        font-size: 14px;
-    }
-
-    .populaires-cards .card-subtitle {
-        font-size: 13px;
-    }
-}
-
-/* Small devices (phones, less than 768px) */
-@media (max-width: 768px) {
-    html,
-    body {
-        min-width:auto;
-        max-width: 768px;
-    }
-
-    .navbar {
-        display: block;
-        margin: 20px 0;  
-    }
-    
-    .logo-div {
-        display: flex;
-        justify-content: center;
-    }
-    
-    .navlist {
-        padding: 0px 5px 20px 0px;
-        margin-right: 0px;
-    }
-
-    .navlist li {
-        border-bottom: solid 3px var(--main-bg-grey);
-        width: 50%;
-        text-align: center;
-    }
-
-    .navlist a:hover {
-        border-bottom: 3px var(--main-blue) solid;
-        border-top: none;
-        color: var(--main-blue);
-    }
-
-    .navlist a:active {
-        border-bottom: 3px var(--main-blue) solid;
-        border-top: none;
-        color: var(--main-blue);
-    }
-
-    body {
-        padding: 0px 0px;
-    }
-    
-    main {
-        padding: 0px;
-    }
-
-    .search {
-        padding: 15px;
-    }
-
-    .search-header {
-        text-align: center;
-    }
-
-    .search-button span {
-        display: none;
-    }
-
-    .search-button i {
-        display: block;
-        color: var(--White);
-        font-size: larger;
-    }
-
-    .search-form {
-        width: 100%;
-    }
-
-    .filterbar {
-    margin: 10px 0px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    }
-
-    .filterbar div {
-    height: 40px;    
-    }
-
-    .hebergements-populaires {
-    flex-direction: column-reverse;
-    }
-
-    .hebergements {
-        margin: 0px 0px;
-        border-radius: 0;
-        padding: 0;
-        background-color: var(--White);
-        border: 0;
-    }
-
-    .hebergements-title {
-        display: flex;
-        justify-content: center;
-        margin: 30px 0px 15px 0px;
-    }
-
-    .hebergements-divcards {
-        flex-direction: column;
-    }
-
-    .heb-cards {
-        width: 90%;
-        margin: 10px 20px;
-    }
-
-    .hebergements footer {
-        background-color: var(--White);
-    }
-
-    .populaires {
-        margin: 0px 0px;
-        border-radius: 0;
-        padding: 20px 0px;
-    }
-
-    .populaires-header {
-        justify-content: center;
-        padding-bottom: 10px;
-    }
-
-    .populaires-title {
-        margin: 0px 30px 0px 30px;
-    }
-
-    .populaires-header .fa-solid {
-        margin: 0px 30px 0px 30px;
-    }
-
-    .populaires-divcards {
-        flex-direction: column;
-    }
-
-    .pop-cards {
-        width:90%;
-        margin: 10px 20px;
-    }
-
-    .footer-container {
-        display: flex;
-        flex-direction: column;
-        padding: 20px 0px 0px 0px;
-    }
-
-    .activites {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .activites-title {
-        display: flex;
-        justify-content: center;
-    }
-    
-    .activites-divcards {
-        display: flex;
-        height: 100%;
-        align-content: center;
-    }
-
-    .actcard {
-        display: flex;
-        width: auto;
-        margin-bottom: 10px;
-    }
-
-    .actcard-content img {
-        width: fit-content;
-        object-fit: cover;
-    }
-
-    .footer-colonne {
-        line-height: 20px;
-    }
-
-    .footer-colonne h4 {
-        margin-top: 0;
-    }
 }
