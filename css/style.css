@@ -615,7 +615,8 @@ footer {
 */
 /* Small devices (phones, less than 768px) */
 @media (max-width: 768px) {
-    html {
+    html,
+    body {
         min-width:auto;
         max-width: 768px;
     }
@@ -661,6 +662,9 @@ footer {
         padding: 0px;
     }
 
+    .search {
+        padding: 15px;
+    }
     .search-header {
         text-align: center;
     }
@@ -679,25 +683,111 @@ footer {
     }
 
     .filterbar {
-    margin: 0px;
+    margin: 10px 0px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
     }
 
+    .filterbar div {
+    height: 2.5em;    
+    }
+
+    .hebergements-and-populaires {
+    flex-direction: column-reverse;
+    }
     .hebergements {
         margin: 0px 0px;
+        border-radius: 0;
+        padding: 0;
+        background-color: var(--White);
+        border: 0;
+    }
+
+    .hebergements-title {
+        display: flex;
+        justify-content: center;
+        margin: 30px 0px 15px 0px;
+        }
+
+    .hebergements-cards {
+        flex-direction: column;
+    }
+
+    .heb-cards {
+        width:-moz-available;
+        margin: 0.5em 1.4em;
     }
 
     .hebergements footer {
-        padding: 0px;
+        background-color: var(--White);
     }
+
     .populaires {
         margin: 0px 0px;
+        border-radius: 0;
+        padding: 20px 0px;
+    }
+
+    .populaires-header {
+        justify-content: center;
+        padding-bottom: 10px;
+    }
+
+    .populaires-title {
+        margin: 0px 30px 0px 30px;
+    }
+
+    .populaires-header .fa-solid {
+        margin: 0px 30px 0px 30px;
+    }
+
+    .populaires-cards {
+        flex-direction: column;
+    }
+
+    .pop-cards {
+        width:90%;
+        margin: 0.5em 1.4em;
     }
 
     .footer-container {
         display: flex;
         flex-direction: column;
+        padding: 20px 0px;
     }
+
+    .activites {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .activites-title {
+        display: flex;
+        justify-content: center;
+    }
+    .activites-cards {
+        display: flex;
+        height: 100%;
+        align-content: center;
+    }
+
+    .actcard {
+        display: flex;
+        width: auto;
+    }
+
+    .actcard-content img {
+        width: fit-content;
+        object-fit: cover;
+    }
+
+    .colonne {
+        line-height: 20px;
+    }
+
+    .colonne h4 {
+        margin-top: 0;
+
+      }
 }
