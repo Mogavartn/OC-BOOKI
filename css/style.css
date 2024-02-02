@@ -715,7 +715,7 @@ footer {
 
     .heb-cards {
         width:-moz-available;
-        margin: 0.5em 1.4em;
+        margin: 0.5em 1em;
     }
 
     .hebergements footer {
@@ -753,7 +753,7 @@ footer {
     .footer-container {
         display: flex;
         flex-direction: column;
-        padding: 20px 0px;
+        padding: 20px 0px 0px 0px;
     }
 
     .activites {
@@ -775,6 +775,7 @@ footer {
     .actcard {
         display: flex;
         width: auto;
+        margin-bottom: 10px;
     }
 
     .actcard-content img {
