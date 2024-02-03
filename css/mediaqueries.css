@@ -16,26 +16,26 @@
         font-size: 20px;
     }
 
-    .hebergements-populaires {
+    .accomodation-popular {
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
     
-    .hebergements {
+    .accomodations {
         margin: 20px 0px 20px 0px;
     }
 
-    .heb-cards {
+    .acc-cards {
         width: 31%;
     }
 
-    .populaires {
+    .popular {
         margin: 20px 0px 20px 0px;
         padding: 20px;
     }
 
-    .populaires-divcards {
+    .popular-divcards {
         flex-direction: row;
     }
 
@@ -44,11 +44,11 @@
         height: auto;
     }
 
-    .populaires-cards a {
+    .popular-cards a {
         width: 30%;
     }
 
-    .activites-divcards {
+    .activities-divcards {
         height: 300px;
     }
 
@@ -138,11 +138,11 @@
     height: 40px;    
     }
 
-    .hebergements-populaires {
+    .accomodation-popular {
     flex-direction: column-reverse;
     }
 
-    .hebergements {
+    .accomodations {
         margin: 0px 0px;
         border-radius: 0;
         padding: 0;
@@ -150,45 +150,45 @@
         border: 0;
     }
 
-    .hebergements-title {
+    .accomodations-title {
         display: flex;
         justify-content: center;
         margin: 30px 0px 15px 0px;
     }
 
-    .hebergements-divcards {
+    .accomodations-divcards {
         flex-direction: column;
     }
 
-    .heb-cards {
+    .acc-cards {
         width: 90%;
         margin: 10px 20px;
     }
 
-    .hebergements footer {
+    .accomodations footer {
         background-color: var(--White);
     }
 
-    .populaires {
+    .popular {
         margin: 0px 0px;
         border-radius: 0;
         padding: 20px 0px;
     }
 
-    .populaires-header {
+    .popular-header {
         justify-content: center;
         padding-bottom: 10px;
     }
 
-    .populaires-title {
+    .popular-title {
         margin: 0px 30px 0px 30px;
     }
 
-    .populaires-header .fa-solid {
+    .popular-header .fa-solid {
         margin: 0px 30px 0px 30px;
     }
 
-    .populaires-divcards {
+    .popular-divcards {
         flex-direction: column;
     }
 
@@ -197,18 +197,18 @@
         margin: 10px 20px;
     }
 
-    .activites {
+    .activities {
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
 
-    .activites-title {
+    .activities-title {
         display: flex;
         justify-content: center;
     }
     
-    .activites-divcards {
+    .activities-divcards {
         display: flex;
         height: 100%;
         align-content: center;
@@ -231,11 +231,11 @@
         padding: 20px 0px 0px 0px;
     }
 
-    .footer-colonne {
+    .footer-column {
         line-height: 20px;
     }
 
-    .footer-colonne h4 {
+    .footer-column h4 {
         margin-top: 0;
     }
 }

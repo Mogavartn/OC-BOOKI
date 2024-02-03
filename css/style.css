@@ -227,14 +227,14 @@ a, button, label {
     color: var(--main-blue);
 }
 
-/*********** Hebergements Populaires **********/
-.hebergements-populaires {
+/*********** Accomodation & Popular **********/
+.accomodation-popular {
     display: flex;
     flex-direction: row;
 }
 
-/*************** Hebergements *****************/
-.hebergements {
+/*************** Accomodations *****************/
+.accomodations {
     margin: 20px 15px 20px 0px;
     background-color: var(--main-bg-grey);
     border: 1px solid var(--main-bg-grey);
@@ -243,12 +243,12 @@ a, button, label {
     padding: 15px;
 }
 
-.hebergements-title {
+.accomodations-title {
     margin: 30px 30px 15px 30px;
     font-size: 22px;
 }
 
-.hebergements-divcards {
+.accomodations-divcards {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -256,25 +256,21 @@ a, button, label {
     position: relative;
 }
 
-.hebergements-divcards img {
+.accomodations-divcards img {
     border-radius: 20px 20px 0px 0px;
     width: 100%;
     height: 135px;
     object-fit: cover;
 }
 
-.hebergements-divcards figcaption {
+.accomodations-divcards figcaption {
     display: flex;
     flex-direction: column;
     line-height: 20px;
     padding: 5px;
 }
 
-.hebcard-content {
-    margin: 0px;
-}
-
-.heb-cards {
+.acc-cards {
     width: 30%;
     height: auto;
     padding: 5px;
@@ -286,23 +282,27 @@ a, button, label {
     transition: transform 250ms ease-in-out;
 }
 
-.heb-cards:hover {
+.acc-cards:hover {
     transform: scale(1.05);
 }
 
-.hebcard-title {
+.acccard-content {
+    margin: 0px;
+}
+
+.acccard-title {
     margin: 0px;
     padding-left: 5px;
     font-size: 16px;
 }
 
-.hebcard-subtitle {
+.acccard-subtitle {
     margin: 0px;
     padding-left: 5px;
     font-size: 14px;
 }
 
-.hebcard-rating {
+.acccard-rating {
     font-size: 12px;
     margin-top: auto;
     padding-left: 5px;
@@ -315,19 +315,19 @@ a, button, label {
     color: var(--main-bg-grey);
 }
 
-.hebergements footer {
+.accomodations footer {
     padding: 20px;
     font-weight: bold;
     border-radius: 20px;
 }
 
-.afficherplus:hover {
+.showmore:hover {
     color: var(--main-blue);
     text-decoration: underline;
 }
 
-/***************** Populaires *****************/
-.populaires {
+/***************** Popular *****************/
+.popular {
     margin: 20px 0px 20px 15px;
     padding-bottom: 15px;
     flex: 1;
@@ -337,24 +337,24 @@ a, button, label {
     padding: 10px;
 }
 
-.populaires-header {
+.popular-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.populaires-header .fa-solid {
+.popular-header .fa-solid {
     margin: 30px 30px 15px 30px;
     color: var(--main-blue);
     font-size: larger;
 }
 
-.populaires-title {
+.popular-title {
     margin: 30px 30px 15px 30px;
     font-size: 22px;
 }
 
-.populaires-divcards {
+.popular-divcards {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -419,16 +419,16 @@ a, button, label {
     transform: scale(1.05);
 }
 
-/**************** Activites ******************/
-.activites {
+/**************** Activities ******************/
+.activities {
     padding: 20px 0px 20px 0px; 
 }
 
-.activites-title {
+.activities-title {
     font-size: 22px;
 }
 
-.activites-divcards {
+.activities-divcards {
     display: flex;
     flex-flow: column wrap;
     align-content: space-between;
@@ -480,20 +480,20 @@ footer {
     flex: 3;
 }
 
-.footer-colonne {
+.footer-column {
     font-size: 12px;
     line-height: 30px;
 }
 
-.footer-colonne li {
+.footer-column li {
     list-style-type: none;
 }
 
-.footer-colonne li:hover {
+.footer-column li:hover {
     text-decoration: underline;
 }
 
-.footer-colonne h4 {
+.footer-column h4 {
     margin-bottom: -10px;
     padding-left: 40px;
     font-size: 14px;
