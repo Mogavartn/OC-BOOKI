@@ -220,7 +220,6 @@
     }
 
     .actcard-content img {
-        width: fit-content;
         object-fit: cover;
     }
 
