@@ -181,6 +181,10 @@ a, button, label {
     flex-wrap: wrap;
 }
 
+.filterbar h2 {
+    font-size: 18px;
+}
+
 .filterbar button {
     display: flex;
     height: 45px;
