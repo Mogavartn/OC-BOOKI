@@ -219,7 +219,9 @@ a, button, label {
     align-items: center;
     width: 20px;
     height: 20px;
-    border: 1px solid var(--main-bg-grey);
+    min-width: 20px;
+    min-height: 20px;
+    border: 2px solid var(--main-bg-grey);
     border-radius: 20px;
 }
 
