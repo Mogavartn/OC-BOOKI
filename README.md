@@ -35,37 +35,29 @@ L'objectif était de d'intégrer une maquette responsive en HTML et CSS.
 &nbsp;
 
 ## Remarques sur l'évaluation
-1. Implémenter une interface responsive avec HTML et CSS
+    1. Implémenter une interface responsive avec HTML et CSS
+    ✅ Validé
 
-✅ Validé
+    Commentaires :
+    Vous avez réalisé une interface parfaitement responsive qui s'adapte à toutes les tailles d'écran. Les points d'arrêt à 768 px et 1024 px ont été très bien gérés, ce qui témoigne de votre compréhension des requêtes média CSS.
 
-Commentaires :
+    2. Intégrer du contenu conformément à une maquette avec HTML et CSS
+    ✅ Validé
 
-Vous avez réalisé une interface parfaitement responsive qui s'adapte à toutes les tailles d'écran. Les points d'arrêt à 768 px et 1024 px ont été très bien gérés, ce qui témoigne de votre compréhension des requêtes média CSS.
+    Commentaires :
+    Vous avez fait un très bon travail en intégrant le contenu conformément à la maquette fournie. Votre code HTML et CSS est très bien organisé, et toutes les ressources sont correctement intégrées.
 
-2. Intégrer du contenu conformément à une maquette avec HTML et CSS
+    3. Versionner son projet avec Git et Github
+    ✅ Validé
 
-✅ Validé
+    Commentaires :
+    Bonne gestion du projet avec GitHub. Les commits sont réguliers.
 
-Commentaires :
+    4. Installer un environnement de développement front-end
+    ✅ Validé
 
-Vous avez fait un très bon travail en intégrant le contenu conformément à la maquette fournie. Votre code HTML et CSS est très bien organisé, et toutes les ressources sont correctement intégrées.
-
-3. Versionner son projet avec Git et Github
-
-✅ Validé
-
-Commentaires :
-
-Bonne gestion du projet avec GitHub. Les commits sont réguliers.
-
-4. Installer un environnement de développement front-end
-
-✅ Validé
-
-Commentaires :
-
-Un environnement de développement est installé et utilisé pour le projet.
+    Commentaires :
+    Un environnement de développement est installé et utilisé pour le projet.
 
 ## Livrables
 
